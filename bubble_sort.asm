@@ -14,26 +14,27 @@
 #}
 
 
-#main usado para teste
+
 .data
 vetor: .word 1, 8, -23, 75, 76, 12, 4, 30, -20, 2
 
 .text
+#main usado para teste
 main:
 	la $s0, vetor
 	addi $s1, $0, 10 #tamanho do vetor
 	
-	#chama a função print
+	#chama a funÃ§Ã£o print
 	addi $a0, $s0, 0
 	addi $a1, $s1, 0
 	jal print
 	
-	#chama a função bubble_sort
+	#chama a funÃ§Ã£o bubble_sort
 	addi $a0, $s0, 0
 	addi $a1, $s1, 0
 	jal bubble_sort
 	
-	#chama a função print
+	#chama a funÃ§Ã£o print
 	addi $a0, $s0, 0
 	addi $a1, $s1, 0
 	jal print
